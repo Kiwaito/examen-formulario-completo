@@ -1,0 +1,348 @@
+:root {
+--pink: hsl(322, 100%, 66%);
+--light-pink: hsl(321, 100%, 78%);
+--light-red: hsl(0, 100%, 63%);
+--dark-cyan: hsl(192, 100%, 9%);
+--pale-blue: hsl(207, 100%, 98%);
+--gris: #9c9c9c;
+}
+
+/* B A S I C O */
+html {
+    font-size: 62.5%;
+    margin: auto;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: auto;
+}
+
+/* N A V B A R */
+nav {
+    position: fixed;
+    display: flex;
+    width: 768px;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    background: white;
+}
+
+.logo {
+    width: 25rem;
+    height: 4rem;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+}
+
+.tryfree {
+    background: white;
+    border: 1px solid var(--pink);
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--pink);
+    font-size: 1.5rem;
+    width: 9rem;
+    height: 2rem;
+    padding: 1.5rem 3rem;
+    margin-right: 2rem;
+}
+
+/* H E A D E R */
+header {
+    text-align: center;
+    margin-top: 20rem;
+    padding: 0 15rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 2.5rem;
+}
+
+.getstart {
+    background-color: var(--pink);
+    color: white;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.imagenPrincipal {
+    width: 90%;
+    background-image: url(../img/screen-mockups.svg);
+    height: 29rem;
+    background-size: contain;
+    margin: 15rem 0;
+}
+
+.cantidad {
+    font-weight: bold;
+    font-size: 10rem;
+}
+
+.categoria {
+    color: var(--gris);
+    font-size: 2rem;
+}
+
+.numeros {
+    display: flex;
+    flex-direction: column;
+}
+
+.comunidades, .mensajes {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0;
+}
+
+.comunidades .icono, .mensajes .icono {
+    background-image: url(../img/icon-communities.svg);
+    width: 45px;
+    height: 38px;
+    background-size: contain;
+    margin-left: 12rem;
+    margin-bottom: 1rem; 
+}
+
+.mensajes .icono {
+    background-image: url(../img/icon-messages.svg);
+    margin-left: 9rem;
+}
+
+/* S E C T I O N */
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section .imagen {
+    background-image: url(../img/illustration-grow-together.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 40rem;
+    margin: 10rem auto;
+}
+
+section.flowing .imagen {
+    background-image: url(../img/illustration-flowing-conversation.svg);
+}
+
+section.users .imagen {
+    background-image: url(../img/illustration-your-users.svg);
+}
+
+section.build {
+    width: 65%;
+    margin: 40rem auto;
+    display: flex;
+}
+
+section.build .titulo {
+    font-size: 3rem;
+}
+
+section .titulo {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+section p {
+    font-size: 1.5rem;
+    padding: 0 14em;
+    line-height: 2.5rem;
+    font-weight: normal;
+}
+
+/* F O O T E R */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-cyan);
+    color: white;
+}
+
+.contacto .logo {
+    filter: invert(1) grayscale(1);
+}
+
+.newsletter, .contacto {
+    padding: 8rem 15rem;
+}
+
+.contacto p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.telefono, .email {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.telmail {
+    font-size: 1.5rem;
+    margin-top:4rem;
+}
+
+.telmail .icono {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+}
+
+.telmail .telefono .icono {
+    background-image: url(../img/icon-phone.svg);
+}
+
+.telmail .email .icono {
+    background-image: url(../img/icon-email.svg);
+}
+
+.newsletter .titulo {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.newsletter p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+input#mail {
+    border-radius: 1rem;
+    width: 46rem;
+    height: 5rem;
+}
+
+input[type="submit"] {
+    border-style: none;
+    background: var(--pink);
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 29.5rem;
+    margin-top: 1rem;
+    width: 16rem;
+    height: 5rem;
+}
+
+@media (min-width: 768px) {
+ nav {
+    width: 100%;
+    padding: 0 5rem;
+    box-sizing: border-box;
+ }
+ .imagenPrincipal {
+    background-repeat: no-repeat;
+    height: 50rem;
+    background-position: center;
+    width: 100%;
+ }
+ .numeros {
+    justify-content: space-around;
+    flex-direction: row;
+}
+.comunidades .icono, .mensajes .icono {
+    margin-left: 0;
+}
+
+section {
+ flex-direction: row-reverse;
+ padding: 10rem;
+}
+
+section .titulo {
+    width: 40rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+}
+
+section p {
+    padding: 0;
+}
+
+section .imagen {
+    margin: 0;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.newsletter {
+    padding: 5rem;
+}
+
+.tryfree {
+    width: 15rem;
+    height: 5rem;
+}
+
+.formulario {
+    flex-direction: row;
+    width: 55rem;
+}
+
+input[type="submit"] {
+    margin-top: 0;
+    margin-left: 5rem;
+}
+
+.contacto {
+    width: 55rem;
+    height: 40rem;
+}
+
+footer {
+    display: flex;
+}
+
+section.build {
+    flex-direction: column;
+}
+
+section.build .titulo {
+    width: auto;
+    margin-right: 0;
+}
+
+section.flowing {
+    flex-direction: row;
+}
+
+}
